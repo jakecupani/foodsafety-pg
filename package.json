@@ -1,32 +1,23 @@
 {
-  "name": "foodsafety_pg",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
-  },
+  "name": "sample_server",
+  "version": "1.0.0",
+  "description": "A sample webserver to pull UMD.io data and push it to a local page",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "author": "Alex Leitch",
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "leaflet": "^1.5.1",
+    "node-fetch": "^2.6.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2"
   }
 }
