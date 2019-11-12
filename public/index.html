@@ -19,8 +19,8 @@
     background-image: url("/Users/Jake/Documents/GitHub/foodsafety_pg/static/banner-bg.jpg");
     color: black;
   }
-  #mapid { 
-    height: 200px;
+  #map { 
+    height: 400px;
     border: 1pt solid black; 
   }
   </style>
@@ -52,32 +52,19 @@
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+      <h2>Filters</h2>
+      <div class="filters">
+
+      </div>
+      
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
       <h2>Map</h2>
       <br>
-      <div id="mapid"></div>
+      <div id="map">
+
+      </div>
       <p>The map</p>
       <div class="container">
         <div class="wrapper">
@@ -115,7 +102,18 @@
     }
   </script>
   <script>
-    let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+  // initialize the map
+  var map = L.map('map').setView([38.7849, 76.8721], 13);
+
+  // load a tile layer
+  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+    {
+      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
   </script>
 </body>
 </html>
