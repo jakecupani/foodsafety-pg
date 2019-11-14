@@ -1,17 +1,15 @@
 function loadData() {
+    console.log("fetch");
     // confirm code is running on click
-    console.log('fetch');
     fetch('/api')
         .then(res => res.json())
         .then(res => {
-            // logging step to check what we got
-            console.log(res);
-            olstr = "<ol>";
-            for (i = 0; i < res.data.length; i++) {
-                olstr += "<li>" + res.data[i] + "</li>"
-            }
-            olstr += "</ol>"
-            return olstr;
+            let geoData = res.map(function (data) { return data["geocoded_column_1"] });
+            return geoData;
         })
-        .then(codes => document.querySelector(".content").innerHTML = codes);
+        .then(res => {
+            console.log("data");
+            console.log(res);
+            return res;
+        });
 }
