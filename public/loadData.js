@@ -4,7 +4,8 @@ function loadData() {
     fetch('/api')
         .then(res => res.json())
         .then(res => {
-            let geoData = res.map(function (data) { return data["geocoded_column_1"] });
+            console.log(res);
+            let geoData = res.data.map(function (data) { return data["geocoded_column_1"] });
             return geoData;
         })
         .then(res => {
