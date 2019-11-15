@@ -7,10 +7,5 @@ function loadData() {
             console.log(res);
             let geoData = res.data.map(function (data) { return data["geocoded_column_1"] });
             return geoData;
-        })
-        .then(res => {
-            console.log("data");
-            console.log(res);
-            return res;
         });
 }

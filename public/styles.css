@@ -3,12 +3,17 @@
     color: darkslategrey;
     background-size: cover;
   }
+
+#map {
+  height: 400px;
+  border: 1pt solid black;
+}
   
-  #mapid {
-    height: 400px;
-    border: 1pt solid black;
-  }
+#mapid {
+  height: 400px;
+  border: 1pt solid black;
+}
   
-  #banner-text {
-    text-align: left;
-  }
+#banner-text {
+  text-align: left;
+}
