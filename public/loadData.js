@@ -5,7 +5,22 @@ function loadData() {
         .then(res => res.json())
         .then(res => {
             console.log(res);
-            let geoData = res.data.map(function (data) { return data["geocoded_column_1"] });
-            return geoData;
+            return res;
+        })
+        .then(res => {
+            coordinates = new Array();
+            for (i = 0; i < res.data.length; i++) {
+                let obj = res.data[i];
+                try {
+                    coordinates.push(obj.coordinates);
+                }
+                catch {
+                    continue;
+                }
+                console.log(obj.coordinates);
+
+            }
+            // console.log(coordinates);
+            return res;
         });
 }

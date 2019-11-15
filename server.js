@@ -45,8 +45,12 @@ app.get('/api', (req, res) => {
   const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
   fetch(baseURL)
     .then((r) => r.json())
+    .then(res => {
+      let geoData = res.map(function (data) { return data["geocoded_column_1"] });
+      console.log(geoData);
+      return geoData;
+    })
     .then((data) => {
-      console.log(data);
       res.send({ data: data });
     })
     .catch((err) => {
