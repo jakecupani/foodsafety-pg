@@ -11,8 +11,7 @@ function loadData() {
             for (i = 0; i < res.data.length; i++) {
                 let obj = res.data[i]["geocoded_column_1"];
                 try {
-                    L.geoJSON(obj).addTo(mymap);
-                    console.log(obj.coordinates);
+                    L.geoJSON(obj).bindPopup("This is " + res.data[i].name).addTo(mymap);
                 }
                 catch {
                     console.log("This did not work");
