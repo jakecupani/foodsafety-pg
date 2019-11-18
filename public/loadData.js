@@ -9,7 +9,7 @@ function loadData() {
         })
         .then(res => {
             for (i = 0; i < res.data.length; i++) {
-                let obj = res.data[i];
+                let obj = res.data[i]["geocoded_column_1"];
                 try {
                     L.geoJSON(obj).addTo(mymap);
                     console.log(obj.coordinates);

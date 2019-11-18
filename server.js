@@ -46,7 +46,7 @@ app.get('/api', (req, res) => {
   fetch(baseURL)
     .then((r) => r.json())
     .then(res => {
-      let geoData = res.map(function (data) { return data["geocoded_column_1"] });
+      let geoData = res.map(function (data) { return data });
       console.log(geoData);
       return geoData;
     })
