@@ -11,13 +11,16 @@ function loadData() {
             coordinates = new Array();
             for (i = 0; i < res.data.length; i++) {
                 let obj = res.data[i];
+                let count = 0;
                 try {
-                    coordinates.push(obj.coordinates);
+                    coordinates.push(obj.coordinates.reverse());
+                    console.log(obj.coordinates);
+                    L.marker(coordinates[i]).addTo(mymap);
                 }
                 catch {
+                    console.log("This did not work");
                     continue;
                 }
-                console.log(obj.coordinates);
 
             }
             // console.log(coordinates);
