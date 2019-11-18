@@ -15,13 +15,15 @@ function loadData() {
                 try {
                     coordinates.push(obj.coordinates.reverse());
                     console.log(obj.coordinates);
-                    L.marker(coordinates[i]).addTo(mymap);
                 }
                 catch {
                     console.log("This did not work");
                     continue;
                 }
 
+            }
+            for(k=0; k<coordinates.length; k++) {
+                L.marker(coordinates[k]).addTo(mymap);
             }
             // console.log(coordinates);
             return res;
