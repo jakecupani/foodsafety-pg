@@ -43,21 +43,88 @@
       <div class="container" style="margin-top:30px">
         <div class="row">
           <div class="col-sm-4">
-            <h2>Filters</h2>
-            <br>
-            <div class="filters">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">
 
-                  </p>
+
+            <!-- Filter layout borrowed from bootsnipp user: vosidiy ---------->
+            <h2 class="display-4">Filters</h2>
+            <div class="card">
+              <article class="card-group-item">
+
+                <header class="card-header">
+                  <h6 class="title">Eatery Category </h6>
+                </header>
+
+                <div class="filter-content">
+                  <div class="card-body">
+                    <script type="text/javascript">
+
+                    function filter() {
+                      console.log('filtering');
+
+                      let categoryFastfood = document.querySelector(".form-check-input").value;
+                      console.log(categoryFastfood)
+                    }
+                    </script>
+                  <form>
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="fastfood" value="Fast Food">
+                      <span class="form-check-label">
+                        Fast Food
+                      </span>
+                    </label> <!-- form-check.// -->
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="fullservice" value="Full Service">
+                      <span class="form-check-label">
+                        Full Service
+                      </span>
+                    </label>  <!-- form-check.// -->
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="constore" value="Convenience Store">
+                      <span class="form-check-label">
+                        Convenience Store
+                      </span>
+                    </label>  <!-- form-check.// -->
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="carryout" value="Carry-out">
+                      <span class="form-check-label">
+                        Carry-out
+                      </span>
+                    </label>  <!-- form-check.// -->
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="grocstore" value="Grocery Store">
+                      <span class="form-check-label">
+                        Grocery Store
+                      </span>
+                    </label>  <!-- form-check.// -->
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="college" value="College/University">
+                      <span class="form-check-label">
+                        College/University
+                      </span>
+                    </label>  <!-- form-check.// -->
+                    <label class="form-check">
+                      <input class="form-check-input" type="checkbox" id="publicschool" value="Public School">
+                      <span class="form-check-label">
+                        Public School
+                      </span>
+                    </label>  <!-- form-check.// -->
+                  </form>
+                  <br>
+                  <button type="button" class="btn btn-block btn-primary" onclick="filter()">Filter</button>
+
+                  </div> <!-- card-body.// -->
                 </div>
-              </div>
-            </div>
+
+              </article> <!-- card-group-item.// -->
+
+            </div> <!-- card.// -->
+            <!--                  END FILTER ---------------------------------->
+            <br>
+
             <hr class="d-sm-none">
           </div>
           <div class="col-sm-8">
-            <h2>Map</h2>
+            <h2 class="display-4">Map</h2>
             <br>
             <div id="mapid">
             </div>
@@ -66,6 +133,7 @@
               <div class="wrapper">
                 <div class="header">API Loader</div>
                 <button class="button" onclick="loadData()">Load Some JSON from a server</button>
+                <br><br>
                 <div class="content"></div>
                 <div class="footer"></div>
               </div>
