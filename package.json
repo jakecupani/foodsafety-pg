@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm start"
   },
   "author": "Alex Leitch",
   "license": "CC-BY-SA-4.0",
