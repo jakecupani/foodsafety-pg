@@ -1,6 +1,6 @@
 #banner {
     background-image: url("https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=");
-    color: darkslategrey;
+    color: #2C4C59;
     background-size: cover;
   }
 
@@ -8,12 +8,55 @@
   height: 400px;
   border: 1pt solid black;
 }
-  
+
 #mapid {
   height: 400px;
   border: 1pt solid black;
 }
-  
+
 #banner-text {
   text-align: left;
+}
+
+.bg-light {
+  background-color: #CEECF2 !important;
+}
+
+body {
+  background: #F2F2F2;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+
+}
+
+.nav-link {
+  color: #2C4C59 !important;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.header {
+  font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.section-head {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2.5em;
+
+
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
 }

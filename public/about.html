@@ -17,39 +17,52 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="favicon.ico" />
+  <!--Import fonts-->
+
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Merriweather+Sans:300|Nunito&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
   <div id="banner" class="jumbotron text-center" style="margin-bottom:0">
     <div id="banner-text">
-      <h1>Prince George's County Food Inspections</h1>
+      <h1 class="header display-4">Prince George's County Food Inspections</h1>
       <p>Helping you find safe and healthy places to eat in PG!</p>
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-sm bg-light navbar-light">
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+  <!-- START NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">PGCFI</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto nav-fill w-100">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="about.html">About</a>
+          <a class="nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="docs.html">Documentation</a>
         </li>
       </ul>
+
     </div>
   </nav>
-
   <div class="container">
     <div class="row">
       <div class="col sm-12 ">
-        <h1 class="display-4">About our project</h1>
+        <h1 class="section-head">About our project</h1>
         <hr>
-        <h2>Motivation & Rationale</h2>
+        <h2 class="header">Motivation & Rationale</h2>
         <p>Food safety is a top priority for any community wishing to keep its residents safe and healthy.
           According to the <a href="https://www.who.int/" target="_blank">World Health Organization</a>,
           600M people become ill from contaminated food, and ~420,000 people die every year<sup><a
@@ -58,7 +71,7 @@
             compliant with food inspections.</strong></p>
         <p>We hope to solve this problem with this web application.</p>
 
-        <h2>How it works</h2>
+        <h2 class="header">How it works</h2>
         <p>This application pulls data from the <a href="https://data.princegeorgescountymd.gov/" target="_blank">Prince
             George's County Open Data Project</a>.
           Specifically, we are using the Food Inspections API to pull data on all food service facilities in PG County,
@@ -69,10 +82,12 @@
     </div>
   </div>
 
-  <div class="text-center" style="margin-bottom:0">
-    <p>Made with ❤ by Group 18 - INST 377.</p>
-    <p>Team members: Matt Ye, Jake Cupani, Nadine Shaker, Will Kraft, Gyan Kadariya, Aparna Ranganathan</p>
-  </div>
+  <footer>
+    <div class="container text-center">
+      <p>Made with ❤ by Group 18 - INST 377.</p>
+      <p>Team members: Matt Ye, Jake Cupani, Nadine Shaker, Will Kraft, Gyan Kadariya, Aparna Ranganathan</p>
+    </div>
+  </footer>
 
 
 </body>
