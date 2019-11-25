@@ -47,9 +47,9 @@ app.get('/api', (req, res) => {
   fetch(baseURL)
     .then((r) => r.json())
     .then(res => {
-      let geoData = res.map(function (data) { return data });
-      console.log(geoData);
-      return geoData;
+      let mapdata = res.map(function (data) { return data });
+      console.log(mapdata);
+      return mapdata;
     })
     .then((data) => {
       res.send({ data: data });

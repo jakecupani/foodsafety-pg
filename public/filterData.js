@@ -7,5 +7,5 @@ function filter() {
             filters.push(checkboxes[i].value);
         }
     }
-    console.log(filters);
+    loadData(filters);
 }
