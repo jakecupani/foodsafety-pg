@@ -13,6 +13,7 @@
   "author": "Alex Leitch",
   "license": "CC-BY-SA-4.0",
   "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha",
     "express": "^4.17.1",
     "leaflet": "^1.5.1",
     "node-fetch": "^2.6.0"
