@@ -69,6 +69,10 @@ p {
 
 }
 
+.team-name {
+  margin-top: 80px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -83,6 +87,9 @@ p {
     width: 200px!important;
     height: 200px!important;
   }
+  .team-name {
+    margin-top: 0px;
+  }
 }
 @media only screen and (max-width: 985px) {
   .flip-card,.flip-card-front img {
@@ -92,6 +99,9 @@ p {
   .flip-card-back {
     font-size: 12pt!important;
   }
+  .team-name {
+    margin-top: 0px;
+  }
 }
 @media only screen and (max-width: 565px) {
   .flip-card,.flip-card-front img {
@@ -99,7 +109,10 @@ p {
     height: 100px!important;
   }
   .flip-card-back {
-    font-size: 10pt!important;
+    font-size: 8pt!important;
+  }
+  .team-name {
+    margin-top: 0px;
   }
 }
 .flip-card-back {
