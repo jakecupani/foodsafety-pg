@@ -86,6 +86,7 @@ p {
   .flip-card,.flip-card-front img {
     width: 200px!important;
     height: 200px!important;
+    transition: 0.5s;
   }
   .team-name {
     margin-top: 0px;
@@ -95,6 +96,7 @@ p {
   .flip-card,.flip-card-front img {
     width: 150px!important;
     height: 150px!important;
+    transition: 0.5s;
   }
   .flip-card-back {
     font-size: 12pt!important;
@@ -107,6 +109,7 @@ p {
   .flip-card,.flip-card-front img {
     width: 100px!important;
     height: 100px!important;
+    transition: 0.5s;
   }
   .flip-card-back {
     font-size: 8pt!important;
@@ -126,6 +129,7 @@ background-color: transparent;
 width: 300px;
 height: 300px;
 perspective: 1000px;
+transition: 0.5s;
 }
 .flip-card-inner {
 position: relative;
