@@ -1,94 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>PG County Food Inspections - About</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-    crossorigin=""></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="favicon.ico" />
-  <!--Import fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Merriweather+Sans:300|Nunito:400,700&display=swap"
-    rel="stylesheet">
-
-</head>
-
-<body>
-
-  <div id="banner" class="jumbotron text-center" style="margin-bottom:0">
-    <div id="banner-text">
-      <h1 class="header display-4">Prince George's County Food Inspections</h1>
-      <p>Helping you find safe and healthy places to eat in PG!</p>
-    </div>
-  </div>
-
-  <!-- START NAVBAR -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- <a class="navbar-brand" href="index.html">PGCFI</a> -->
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto nav-fill w-100">
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="docs.html">Documentation</a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-  <br>
-  <div class="container">
-    <div class="row">
-      <div class="col sm-12 ">
-        <h1 class="section-head">About our project</h1>
-        <hr>
-        <h2 class="header">Motivation & Rationale</h2>
-        <p>Food safety is a top priority for any community wishing to keep its residents safe and healthy.
-          According to the <a href="https://www.who.int/" target="_blank">World Health Organization</a>,
-          600M people become ill from contaminated food, and ~420,000 people die every year<sup><a
-              href="https://www.who.int/news-room/fact-sheets/detail/food-safety" target="_blank">1</a></sup>.</p>
-        <p><strong>Currently, there is no easily accessible and intuitive way to determine if the places they go to are
-            compliant with food inspections.</strong></p>
-        <p>We hope to solve this problem with this web application.</p>
-        <br>
-        <div class="team">
-          <h2 class="header">Meet the Team</h2>
+  <head>
+    <title>PG County Food Inspections - About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin="" />
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="favicon.ico" />
+      <!--Import fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Merriweather+Sans:300|Nunito:400,700&display=swap"
+        rel="stylesheet">
+      </head>
+      <body>
+        <div id="banner" class="jumbotron text-center" style="margin-bottom:0">
+          <div id="banner-text">
+            <h1 class="header display-4">Prince George's County Food Inspections</h1>
+            <p>Helping you find safe and healthy places to eat in PG!</p>
+          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <div class="container text-center">
-      <p>Made with ❤ by Group 18 - INST 377.</p>
-      <p>Team members: Matt Ye, Jake Cupani, Nadine Shaker, Will Kraft, Gyan Kadariya, Aparna Ranganathan</p>
-    </div>
-  </footer>
-
-
-</body>
-
-</html>
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="index.html">PGCFI</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto nav-fill w-100">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docs.html">Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col sm-12 ">
+              <h1 class="section-head">About our project</h1>
+              <hr>
+              <h2 class="header">Motivation & Rationale</h2>
+              <p>Food safety is a top priority for any community wishing to keep its residents safe and healthy.
+                According to the <a href="https://www.who.int/" target="_blank">World Health Organization</a>,
+                600M people become ill from contaminated food, and ~420,000 people die every year<sup><a
+                href="https://www.who.int/news-room/fact-sheets/detail/food-safety" target="_blank">1</a></sup>.</p>
+                <p><strong>Currently, there is no easily accessible and intuitive way to determine if the places they go to are
+                compliant with food inspections.</strong></p>
+                <p>We hope to solve this problem with this web application.</p>
+                <br>
+                <div class="team">
+                  <h2 class="header">Meet the Team</h2>
+                  <div class="team-cards">
+                    <table>
+                      <tr>
+                        <td>
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="jake.jpg" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Jake Cupani</h1>
+                                <p>Team Manager</p>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Matt Ye</h1>
+                                <p>Lead Designer</p>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </td>
+                        <td>
+                          
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Aparna</h1>
+                                <p>Assistant Designer and Documentation</p>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Gyan</h1>
+                                <p>Branding and Documentation</p>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </td>
+                        <td>
+                          
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Nadine Shaker</h1>
+                                <p>Readme Manager</p>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Will Kraft</h1>
+                                <p>Developer</p>
+                                <p></p>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                    
+                  </div>
+                </div>
+                <br>
+                <br>
+                <footer>
+                  <div class="container text-center">
+                    <p>Made with ❤ by Group 18 - INST 377.</p>
+                    <p>Team members: Matt Ye, Jake Cupani, Nadine Shaker, Will Kraft, Gyan Kadariya, Aparna Ranganathan</p>
+                  </div>
+                </footer>
+              </body>
+            </html>
