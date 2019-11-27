@@ -78,7 +78,13 @@ p {
 }
 
 /* Cards  CSS*/
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1092px) {
+  .flip-card,.flip-card-front img {
+    width: 200px!important;
+    height: 200px!important;
+  }
+}
+@media only screen and (max-width: 985px) {
   .flip-card,.flip-card-front img {
     width: 150px!important;
     height: 150px!important;
@@ -104,8 +110,8 @@ p {
 }
 .flip-card {
 background-color: transparent;
-width: 200px;
-height: 200px;
+width: 300px;
+height: 300px;
 perspective: 1000px;
 }
 .flip-card-inner {
@@ -136,6 +142,6 @@ color: white;
 transform: rotateY(180deg);
 }
 .flip-card-front img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
