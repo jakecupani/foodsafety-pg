@@ -10,8 +10,8 @@ good inspection track record, while also warning the users of nearby locations w
 violations.  
 
 ## About the Data 
- - We are using the Food Inspection dataset available on the Prince George’s 
-County Data Portal. This dataset includes information on whether or not a restaurant 
+ - We are using the Food Inspection dataset available on the [Prince George’s 
+County Data Portal](https://data.princegeorgescountymd.gov/Health/Food-Inspection/umjn-t2iz). This dataset includes information on whether or not a restaurant 
 has failed inspection and how many times as inspection are done every six months. 
 
 ## Technology Stack 
