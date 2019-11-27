@@ -82,8 +82,8 @@ p {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   perspective: 1000px;
 }
 
