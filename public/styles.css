@@ -150,8 +150,8 @@ background-color: #bbb;
 color: black;
 }
 .flip-card-back {
-/* background-color: #2980b9; */
-background-color: royalblue;
+background-color: #2980b9;
+/* background-color: royalblue; */
 color: white;
 transform: rotateY(180deg);
 }
