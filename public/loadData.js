@@ -8,7 +8,8 @@ function loadData(filters) {
             console.log(filters);
             if (filters) {
                 console.log("there are filters");
-                newdata = res.data.filter(el => el.category == filters);
+
+                newdata = res.data.filter(el => filters.includes(el.category));
             }
             else {
                 console.log("there are no filters");
@@ -17,15 +18,13 @@ function loadData(filters) {
 
             console.log(newdata);
             return newdata;
-
-            return res;
         })
         .then(res => {
+            let places = new Array();
             for (i = 0; i < res.length; i++) {
                 let obj = res[i]["geocoded_column_1"];
                 try {
-                    L.geoJSON(obj).bindPopup(res[i].name).addTo(mymap);
-
+                    places.push(L.geoJSON(obj).bindPopup(res[i].name));
                 }
                 catch {
                     console.log("This did not work");
@@ -33,6 +32,8 @@ function loadData(filters) {
                 }
 
             }
+            console.log(places);
+            let markers = L.layerGroup(places).addTo(mymap);
             return res;
         });
 }

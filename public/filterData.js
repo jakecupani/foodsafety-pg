@@ -1,4 +1,4 @@
-function filter() {
+function filterData() {
     console.log('filtering');
     let checkboxes = document.getElementsByName("filter-option");
     let filters = new Array();
