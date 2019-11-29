@@ -16,6 +16,16 @@ function loadData(filters) {
                 return res.data;
             }
 
+            function foodList (newdata) {
+              let foodlist = "";
+              for (let i = 0; i < newdata.length; i += 1) {
+                let obj = newdata[i];
+                foodlist += "<li>"+obj.name+"</li>";
+              }
+              document.querySelector("#listing").innerHTML = "<ul>"+foodlist+"<ul>"
+              return newdata;
+            }
+            foodList(newdata)
             console.log(newdata);
             return newdata;
         })
