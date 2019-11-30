@@ -1,4 +1,12 @@
 let markers;
+function resetMap() {
+    try {
+        markers.clearLayers();
+    }
+    catch {
+        console.log('no markers made yet');
+    }
+}
 function loadData(filters) {
     // console.log("fetch");
     function foodList (newdata) {
@@ -52,12 +60,7 @@ function loadData(filters) {
 
             }
             console.log("places",places);
-            try {
-                markers.clearLayers();
-            }
-            catch {
-                console.log('no markers made yet');
-            }
+            resetMap();
             markers = L.layerGroup(places).addTo(mymap);
             foodList(res);
             return res;
