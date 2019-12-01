@@ -10,18 +10,6 @@ function resetMap() {
     }
 }
 function loadData(filters) {
-    // console.log("fetch");
-    function foodList (newdata) {
-        let foodlist = "";
-        for (let i = 0; i < newdata.length; i += 1) {
-          let obj = newdata[i];
-          foodlist += "<li>"+obj.name+": "+obj.inspection_results+"</li>";
-        }
-        document.querySelector("#listing").innerHTML = "<ol>"+foodlist+"</ol>";
-        return newdata;
-      }
-    
-
     // confirm code is running on click
     fetch('/api')
         .then(res => res.json())
@@ -55,10 +43,8 @@ function loadData(filters) {
                 }
 
             }
-            console.log("places",places);
             resetMap();
             markers = L.layerGroup(places).addTo(mymap);
-            foodList(res);
             return res;
         });
 }
