@@ -1,4 +1,6 @@
 let markers;
+let raw_data;
+
 function resetMap() {
     try {
         markers.clearLayers();
@@ -18,15 +20,9 @@ function loadData(filters) {
         document.querySelector("#listing").innerHTML = "<ol>"+foodlist+"</ol>";
         return newdata;
       }
-    let raw_data;
+    
 
     // confirm code is running on click
-    if(raw_data) {
-        console.log("there is data");
-    }
-    else {
-        console.log("there is not data");
-    }
     fetch('/api')
         .then(res => res.json())
         .then(res => {
