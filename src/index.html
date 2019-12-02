@@ -16,7 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="favicon.ico" />
   <!--Import fonts-->
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Merriweather+Sans:300|Nunito:400,700&display=swap"
@@ -64,7 +64,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="section-head">Get Started!</h2>
+        <h2 class="section-head">Get Started</h2>
         <p>Get started by filtering the type of category you want to see. The map will then update and you can select
           the restaurant you want to see health inspection results from. </p>
       </div>
@@ -167,40 +167,46 @@
           </div>
         </div>
       </div>
-      
+
 
     </div>
   </div>
   <div class="album py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <!--Card Label-->
-          <h3 class="results">Address</h3>
-          <div class="card mb-4 shadow-sm">
-              <span id="address">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
-                    </span>
+        <div class="col-sm-12">
+
+          <h2 class="header">Results</h3>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+
+                <div class="col-sm-3">
+                  <h3 class="results">Name</h3>
+                  <p id="name"></p>
+                </div>
+
+                <div class="col-sm-3">
+                  <h3 class="results">Location</h3>
+                  <p id="address"></p>
+
+                </div>
+
+                <div class="col-sm-6">
+                  <h3 class="results">Inspection Results</h3>
+                  <p id="inspection_results"></p>
+                </div>
+
+              </div>
+
             </div>
-        </div>
-        <div class="col-md-4">
-          <!--Card Label-->
-          <h3 class="results">Cleanliness</h3>
-          <div class="card mb-4 shadow-sm">
-              <span id="cleanliness">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
-                    </span>          
-            </div>
-        </div>
-        <div class="col-md-4">
-          <!--Card Label-->
-          <h3 class="results">Inspections</h3>
-          <div class="card mb-4 shadow-sm">
-              <span id="inspection_results">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
-              </span>
+
           </div>
+          <br>
+
         </div>
+
+
       </div>
     </div>
   </div>
