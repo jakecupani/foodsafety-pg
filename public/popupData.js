@@ -7,5 +7,7 @@ function popupData(estid) {
             restaurant = raw_data.data[i];
         }
     }
+    document.getElementById("address").innerHTML = restaurant.address_line_1
+    // document.getElementById("cleanliness").innerHTML = restaurant.
     document.getElementById("inspection_results").innerHTML = restaurant.inspection_results;
 } 
