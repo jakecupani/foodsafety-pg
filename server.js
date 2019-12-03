@@ -48,6 +48,11 @@ app.get('/api', (req, res) => {
     .then((r) => r.json())
     .then(res => {
       let mapdata = res.map(function (data) { return data });
+      mapdata.map(el => { 
+        if (el.inspection_results === "------") { 
+          el.inspection_results = "No inspection results available.";
+        }
+      });
       console.log(mapdata);
       return mapdata;
     })
