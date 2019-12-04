@@ -20,9 +20,10 @@ function popupData(estid) {
     //https://www.google.com/maps/search/?api=1&query=760+West+Genesee+Street+Syracuse+NY+13204
     //loading in detailed Results
     document.getElementById("detailed-results").innerHTML =
-        "<li><strong>" + "Inspection Date: </strong>" + restaurant.inspection_date + "</li>"
+        "<li><strong>" + "Inspection Date: </strong>" + restaurant.inspection_date.slice(0, -13) + "</li>"
         + "<li><strong>" + "Food from approved source: </strong>" + restaurant.food_from_approved_source + "</li>"
         + "<li><strong>" + "Adequate hand washing : </strong>" + restaurant.adequate_hand_washing + "</li>"
+        + "<li><strong>" + "Proper hand washing : </strong>" + restaurant.proper_hand_washing + "</li>"
         + "<li><strong>" + "Cold holding temperature: </strong>" + restaurant.cold_holding_temperature + "</li>"
         + "<li><strong>" + "Cooking time and temperature: </strong>" + restaurant.cooking_time_and_temperature + "</li>"
         + "<li><strong>" + "Cooling time and temperature: </strong>" + restaurant.cooling_time_and_temperature + "</li>"
