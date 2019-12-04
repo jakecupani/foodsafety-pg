@@ -15,7 +15,7 @@ function loadData(filters) {
         .then(res => res.json())
         .then(res => {
             raw_data = res;
-            console.log("the raw data",raw_data);
+            console.log("the raw data", raw_data);
             if (filters) {
                 console.log("there are filters");
                 newdata = res.data.filter(el => filters.includes(el.category));
@@ -34,7 +34,7 @@ function loadData(filters) {
             for (i = 0; i < res.length; i++) {
                 let obj = res[i]["geocoded_column_1"];
                 try {
-                    places.push(L.geoJSON(obj).bindPopup("<p>" + res[i].name + "</p><button class = 'btn btn-block btn-primary' onclick='popupData(" +res[i].establishment_id+ ")'>Get Results</button>"));
+                    places.push(L.geoJSON(obj).bindPopup("<p>" + res[i].name + "</p><button class = 'btn btn-block btn-primary' onclick='popupData(" + res[i].establishment_id + ")'>Get Results</button>"));
                     names.push(res[i].name + res[i].address_line_1);
                 }
                 catch {
