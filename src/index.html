@@ -28,8 +28,7 @@
 
   <div id="banner" class="jumbotron text-center" style="margin-bottom:0">
     <div id="banner-text">
-      <h1 class="header display-4">Prince George's County Food Inspections</h1>
-      <p>Helping you find safe and healthy places to eat in PG!</p>
+      <img src="pg-logo.png" width="25%">
     </div>
   </div>
 
@@ -62,14 +61,6 @@
 
   <br>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2 class="section-head">Get Started!</h2>
-        <p>Get started by filtering the type of category you want to see. The map will then update and you can select
-          the restaurant you want to see health inspection results from. </p>
-      </div>
-    </div>
-    <hr>
     <div class="row">
       <div class="col-sm-4">
 
@@ -139,9 +130,9 @@
                 <br>
                 <button id="filter-btn" type="button" class="btn btn-block btn-primary"
                   onclick="filterData()">Filter</button>
-                  <button type="button" class="btn btn-block btn-primary" onclick="resetMap()">
-                    Reset
-                  </button>
+                <button type="button" class="btn btn-block btn-primary" onclick="resetMap()">
+                  Reset
+                </button>
 
               </div> <!-- card-body.// -->
             </div>
@@ -177,51 +168,32 @@
         <div class="col-sm-12">
 
           <h2 class="header">Results</h3>
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
 
-                <div class="col-sm-4">
-                  <h3 class="results">Name</h3>
-                  <p class="results-name" id="name"></p>
-                </div>
-
-                <div class="col-sm-3">
-                  <h3 class="results">Location</h3>
-                  <p class="results-addy"id="address"></p>
-
-                </div>
-
-                <div class="col-sm-5">
-                  <h3 class="results">Inspection Results</h3>
-                  <p class="results-inspection" id="inspection_results"></p>
-                </div>
-
-
-
-                <div class="col-sm-12">
-                  <hr class="my-3">
-                  <p>
-
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      See detailed inspection results
-                    </button>
-                  </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                      <ul>
-                        <p id="detailed-results">No resturant or establishment selcted</p>
-                      </ul>
-                    </div>
+                  <div class="col-sm-3">
+                    <h3 class="results">Name</h3>
+                    <p id="name"></p>
                   </div>
+
+                  <div class="col-sm-3">
+                    <h3 class="results">Location</h3>
+                    <p id="address"></p>
+
+                  </div>
+
+                  <div class="col-sm-6">
+                    <h3 class="results">Inspection Results</h3>
+                    <p id="inspection_results"></p>
+                  </div>
+
                 </div>
 
               </div>
 
             </div>
-
-          </div>
-          <br>
+            <br>
 
         </div>
 
