@@ -17,6 +17,8 @@ function popupData(estid) {
     console.log(request);
     document.getElementById("location-link").innerHTML = request;
     document.getElementById("gmap-request").innerHTML = "<img id='gmaps-icon' width=20% src='google-maps-logo.png'>"
+    document.getElementById("inspection-button").style.display = "block";
+
     //https://www.google.com/maps/search/?api=1&query=760+West+Genesee+Street+Syracuse+NY+13204
     //loading in detailed Results
     document.getElementById("detailed-results").innerHTML =
