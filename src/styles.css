@@ -59,6 +59,26 @@ body {
   color: #467F8C;
   font-size: 2em;
 }
+
+.results-name {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+
+.results-addy {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+
+.results-inspection {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  font-weight: 1000;
+}
+
 .nav-link {
   font-family: 'Nunito', sans-serif;
 
