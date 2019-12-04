@@ -55,8 +55,9 @@ body {
 
 .results {
   font-family: 'Nunito', sans-serif;
-  text-align: center;
-  color: #467F8C
+  text-align: left;
+  color: #467F8C;
+  font-size: 2em;
 }
 .nav-link {
   font-family: 'Nunito', sans-serif;
