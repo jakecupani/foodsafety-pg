@@ -26,10 +26,8 @@ In addition, the OS your device is running does not interfere with the ability f
 ### Special Shoutouts
 We would like to thank the following citations for allowing our application to be as great as it is. Without their assistance, *Food Safety PG* would not have been as up to date as it is! 
 
-Card Layout and Animations:
-https://www.w3schools.com/howto/howto_css_flip_card.asp
+Card Layout and Animations--> https://www.w3schools.com/howto/howto_css_flip_card.asp
 
-Logo Creation:
-brandmark.io
+Logo Creation--> https://brandmark.io/
 
 
