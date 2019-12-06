@@ -190,3 +190,6 @@ transform: rotateY(180deg);
 #inspection-button {
   display: none;
 }
+#logo {
+  width:25%
+}

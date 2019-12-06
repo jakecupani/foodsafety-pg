@@ -28,7 +28,7 @@
 
   <div id="banner" class="jumbotron text-center" style="margin-bottom:0">
     <div id="banner-text">
-      <img src="\static\pg-logo.png" width="30%">
+      <img src="\static\pg-logo.png" id="logo">
     </div>
   </div>
 
@@ -154,9 +154,9 @@
         <div class="container">
           <div class="wrapper">
             <!-- <div class="header">API Loader</div> -->
-            <button class="btn btn-block btn-primary" onclick="loadData()"data-container="body"
-            data-toggle="popover" data-placement="bottom" data-trigger="hover"
-            data-content="Warning - loading all data will cause significant slowdowns">Load All Data
+            <button class="btn btn-block btn-primary" onclick="loadData()" data-container="body" data-toggle="popover"
+              data-placement="bottom" data-trigger="hover"
+              data-content="Warning - loading all data will cause significant slowdowns">Load All Data
             </button>
 
             </button>
@@ -239,8 +239,8 @@
   <script src="map.js"></script>
   <script src="popupData.js"></script>
   <script type="text/javascript">
-      $(function () {
-    $('[data-toggle="popover"]').popover()
+    $(function () {
+      $('[data-toggle="popover"]').popover()
     })
   </script>
 
