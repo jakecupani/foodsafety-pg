@@ -65,10 +65,12 @@ app.get('/api', (req, res) => {
     });
 });
 
-// app.post("/filter", function (req, res) {
-//   console.log("aye u did a post request");
-//   res.send(req);
-// })
+app.post("/", (err, res) => {
+  res.status(200);
+  res.send("working");
+  console.log("working")
+  res.end();
+});
 
 app.listen(PORT, () => {
   console.log(`Our app is running on port ${PORT}`);
