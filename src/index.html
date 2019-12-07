@@ -76,7 +76,7 @@
 
             <div class="filter-content">
               <div class="card-body">
-                <form>
+                <form action="filter" method="POST">
                   <label class="form-check">
                     <input class="form-check-input" name="filter-option" type="checkbox" id="fastfood"
                       value="Fast Food">
@@ -126,13 +126,14 @@
                       Public School
                     </span>
                   </label> <!-- form-check.// -->
+                  <br>
+                  <button id="filter-btn" type="submit" class="btn btn-block btn-primary"
+                    onclick="filterData()">Filter</button>
+                  <button type="button" class="btn btn-block btn-outline-primary" onclick="resetMap()">
+                    Reset
+                  </button>
                 </form>
-                <br>
-                <button id="filter-btn" type="button" class="btn btn-block btn-primary"
-                  onclick="filterData()">Filter</button>
-                <button type="button" class="btn btn-block btn-outline-primary" onclick="resetMap()">
-                  Reset
-                </button>
+
 
               </div> <!-- card-body.// -->
             </div>
