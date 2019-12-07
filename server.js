@@ -48,12 +48,12 @@ app.get('/api', (req, res) => {
     .then((r) => r.json())
     .then(res => {
       let mapdata = res.map(function (data) { return data });
-      mapdata.map(el => { 
-        if (el.inspection_results === "------") { 
+      mapdata.map(el => {
+        if (el.inspection_results === "------") {
           el.inspection_results = "No inspection results available.";
         }
       });
-      console.log(mapdata);
+      // console.log(mapdata);
       return mapdata;
     })
     .then((data) => {
@@ -64,6 +64,10 @@ app.get('/api', (req, res) => {
       res.redirect('/error');
     });
 });
+
+app.post("/filter", function (req, res) {
+  console.log("aye u did a post request");
+})
 
 app.listen(PORT, () => {
   console.log(`Our app is running on port ${PORT}`);
