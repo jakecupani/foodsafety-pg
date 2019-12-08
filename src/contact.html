@@ -25,10 +25,10 @@
         $(document).ready(function () {
             var user, pass;
             $("#submit").click(function () {
-                tempUser = $("#user").val();
-                tempMessage = $("#message").val();
-                data = { user:tempUser, message:tempMessage };
-                $.post('http://foodsafetypg.herokuapp.com/messages', data, function (data, res) {
+                user = $("#user").val();
+                message = $("#message").val();
+                data = { user: user, message: message };
+                $.post('http://localhost:3000/messages', data, function (data, res) {
                     console.log("status")
                 });
             });
@@ -82,7 +82,7 @@
             improve!</p>
         <hr class="my-4">
 
-        <form method="POST" action="msg">
+        <form method="POST" action="messages">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="TEXT" class="form-control" id="user" aria-describedby="emailHelp"

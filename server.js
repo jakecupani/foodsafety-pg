@@ -71,7 +71,7 @@ app.get('/messages', function (req, res) {
 });
 
 app.post('/messages', function (req, res) {
-  messages.push(request.body)
+  // messages.push(request.body)
   var user_name = req.body.user;
   var message = req.body.message;
   console.log("User name = " + user_name + ", message is " + message);
