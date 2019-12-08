@@ -65,11 +65,32 @@ app.get('/api', (req, res) => {
     });
 });
 
-app.post('/msg', function (req, res) {
+let messages = [];
+app.get('/messages', function (req, res) {
+  res.json(messages);
+});
+
+app.post('/messages', function (req, res) {
+  messages.push(request.body)
   var user_name = req.body.user;
   var message = req.body.message;
   console.log("User name = " + user_name + ", message is " + message);
   res.end("yes");
+});
+
+app.put('/messages/:user', function (req, res) {
+  let user = Number(req.body.user);
+  let msg = request.body.message;
+  let temp = messages.find((el) => el.user === user);
+  let index = messages.indexOf(temp);
+
+  if (!temp) {
+    response.status(500).send('Your message was not found.');
+  } else {
+    messages[index].message = msg;
+    response.send('Message updated.')
+  }
+
 });
 
 app.listen(PORT, () => {

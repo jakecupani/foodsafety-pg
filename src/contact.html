@@ -25,12 +25,11 @@
         $(document).ready(function () {
             var user, pass;
             $("#submit").click(function () {
-                user = $("#user").val();
-                message = $("#message").val();
-                $.post("http://localhost:3000/msg", { user: user, message: message }, function (data) {
-                    if (data === 'done') {
-                        alert("login success");
-                    }
+                tempUser = $("#user").val();
+                tempMessage = $("#message").val();
+                data = { user:tempUser, message:tempMessage };
+                $.post('http://foodsafetypg.herokuapp.com/messages', data, function (data, res) {
+                    console.log("status")
                 });
             });
         });
