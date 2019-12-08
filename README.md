@@ -18,8 +18,8 @@ With the growing use of hand-held mobile devices, we created our application wit
 In addition, the OS your device is running does not interfere with the ability for the app to preform well because the application has been created with all operating systems in mind. 
 
 
-## For more information...
-...visit our [user manual](https://docs.google.com/document/d/1aExevIRlfnRhYMZTf55YC05FRbZzYaYNl-uxGEv27YQ/edit?usp=sharing) to get a more in depth look at our application, as well as how to use it and other useful tips. 
+## User Manual
+Check out our [user manual](https://docs.google.com/document/d/1aExevIRlfnRhYMZTf55YC05FRbZzYaYNl-uxGEv27YQ/edit?usp=sharing) to get a more in depth look at our application, as well as how to use it and other useful tips. 
 
 ## Link to Developer Manual
 
