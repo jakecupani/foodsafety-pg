@@ -30,4 +30,6 @@ Card Layout and Animations--> https://www.w3schools.com/howto/howto_css_flip_car
 
 Logo Creation--> https://brandmark.io/
 
+POST Request Template --> https://codeforgeek.com/handle-get-post-request-express-4/
+
 

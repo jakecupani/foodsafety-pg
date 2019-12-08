@@ -65,9 +65,12 @@ app.get('/api', (req, res) => {
     });
 });
 
-// app.post("/", (err, res) => {
-//   res.end();
-// });
+app.post('/msg', function (req, res) {
+  var user_name = req.body.user;
+  var message = req.body.message;
+  console.log("User name = " + user_name + ", message is " + message);
+  res.end("yes");
+});
 
 app.listen(PORT, () => {
   console.log(`Our app is running on port ${PORT}`);
