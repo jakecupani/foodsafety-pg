@@ -1,4 +1,5 @@
-## Developer manual for Food Safety PG
+## A Developer manual for food safety PG
+![Food Safety PG Logo](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/pg-logo.png)
 ### Introduction 
 This developer manual was created to help you guide through the system design of Food Safety PG Application. This manual
 will go through how to get all the files you will need to run the application and steps on how to run and install any dependencies that were
@@ -62,6 +63,7 @@ How to get application files
 2.	Clone or download the repository to your GitHub desktop to review the files and codes.
 3.	Once you have downloaded the files, on your GitHub desktop click on ```repositor``` which is located at the top where the navigation bars are located, then click on 
 ```show on explorer``` this will take you to your machines file directory where the files are located.  
+![Github Explorer](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/githubPG.png)
 4.	You will be able to see the file path which will help you run the server later.
 
 Once you have completed all the steps above you are ready to run the application from the server. 
@@ -141,17 +143,3 @@ app.put('/messages/:user', function (req, res) {
 ```
 ### Bugs and Road-Map to future development
 Some of the bugs you might encounter with this application include loading of the map markers and filters. In the beginning the team had issues with filter. When the user clicked  the filters the map was not populating with markers as expected but it was resolved later. The post request takes you to the contact page where users can input their contact info but the information is not sent anywhere and for future development that can be worked further to get feedback from users to improve the application. For future development we would like to take this application into a bigger scale, not just PG county but hopefully make it to state-level so everyone in Maryland can use this application to make healthy choices when it comes to picking where to eat. We will make changes into the application if we do decide to up the scale of this project by adding different features to the site like adding a search bar so people can easily look up restaurant. We will need more data since we will be covering more areas and solutions to handle massive amounts of data on the server and display it to the front of the application without any delay or lag for smooth user experience. 
-        
-      
-      
-
-
-
-
-
-
-
-
-
-
-
