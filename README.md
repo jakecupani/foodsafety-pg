@@ -1,4 +1,4 @@
-# _Food Safety PG_
+![Food Safety PG Logo](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/pg-logo.png)
 > An application created to help users make make informed, healthy decisions regarding where to eat around PG County
 
 *According to the World Health Organization, 600 million people become ill from contaminated food and around 420 thousand people die from contaminated food every year. Given these statistics, food safety and handling of restaurants is arguably one of the most direct ways in keeping the public healthy.*
@@ -19,9 +19,8 @@ In addition, the OS your device is running does not interfere with the ability f
 
 
 ## For more information...
-...visit our [user manual](https://docs.google.com/document/d/1aExevIRlfnRhYMZTf55YC05FRbZzYaYNl-uxGEv27YQ/edit?usp=sharing) to get a more in depth look at our application, as well as how to use it and other useful tips. 
-
-## Link to Developer Manual
+...visit our [user manual](https://github.com/jakecupani/foodsafety_pg/blob/shakern/UMANUAL.md) to get a more in depth look at our application, as well as how to use it and other useful tips. 
+...visit our [developer manual]() to get a more technical look at our application, including how to load our application, run the server, and much more. 
 
 ### Special Shoutouts
 We would like to thank the following citations for allowing our application to be as great as it is. Without their assistance, *Food Safety PG* would not have been as up to date as it is! 
