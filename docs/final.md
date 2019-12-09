@@ -12,7 +12,7 @@ Prince George’s (PG) County has the 3rd highest number of households in Maryla
 + Finally, a future potential stakeholder is the World Health Organization (WHO).
 
 ### Data
-We chose to work with data provided by the PG Open Data Project, specifically the [Food Inspection API](https://data.princegeorgescountymd.gov/Health/Food-Inspection/umjn-t2iz "PG County Food Inspection Dataset").
+We chose to work with data provided by the PG Open Data Project, specifically the [Food Inspection API](https://data.princegeorgescountymd.gov/Health/Food-Inspection/umjn-t2iz "PG County Food Inspection Dataset"). The data has various attributes detailing information regarding each establishment, such as location, category, name, and detailed inspection results. The location variable made it easy to port into the Leaflet map on our website since they are already "Point" objects with respective latitude and longitude coordinates. The data was provided by the Department of Permitting, Inspections and Enforcement. The dataset was created on Match 6th, 2019, which makes it a fairly new dataset to be working with. When we made the API request for the data, it returns in JSON which is helpful because it is an easy to manipulate format.
 
 ### Chosen Strategies
 We wanted to present the data in the most simple and straightforward manner. In order to do so, we had to pull the complicated data supplied by the API, and format it in a way that was easy to understand. We also wanted to supply location data in the same simplified manner.
