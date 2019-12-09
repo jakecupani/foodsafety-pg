@@ -19,7 +19,7 @@ In addition, the OS your device is running does not interfere with the ability f
 
 
 ## User Manual
-Check out our [user manual](https://docs.google.com/document/d/1aExevIRlfnRhYMZTf55YC05FRbZzYaYNl-uxGEv27YQ/edit?usp=sharing) to get a more in depth look at our application, as well as how to use it and other useful tips. 
+Check out our [user manual](/docs/user.md) to get a more in depth look at our application, as well as how to use it and other useful tips. 
 
 ## Link to Developer Manual
 Our [developer manual](https://docs.google.com/document/d/1iefE5DxGK23aeSyObZ1jOp3VUfZ0LbYG5INjot7Bk_U/edit?usp=sharing) has more in-depth information about how to install application dependencies, run the application from the server, run test for the application, and what each endpoint does.  
