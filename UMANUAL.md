@@ -48,9 +48,22 @@ The Contact Us page allows users to send their thoughts and feedback, as well as
 
 1. The first step in using the FSPG application is applying the filters that relate to your specific search. This can be done by checking the relevant boxes on the left hand side under the Filters section, and clicking “Filter”. 
 
+<p align="center"> 
+<img src="https://github.com/jakecupani/foodsafety_pg/blob/shakern/src/Home%20Filter.png" width="300" height="400">
+</p>
+
 2. You’ll notice that the map has updates with markers of the locations of food establishments that meet the criteria of the filters that you selected. Click on the marker you want to learn more about and then click “Get Results” to learn more about the food establishment.
 
-3. Underneath, you’ll see that the ‘Name’, ‘Location’, and ‘Inspection Results’ sections of the page have updated with the results related to the food establishment that you have selected.
+<p align="center"> 
+<img src="https://github.com/jakecupani/foodsafety_pg/blob/shakern/src/Home%20Map.png" width=500" height="350">
+</p>
+
+3. Underneath, you’ll see that the name, location, & inspection results in the 'Results' section of the page have updated with the information related to the food establishment that you have selected.
+
+<p align="center"> 
+<img src="https://github.com/jakecupani/foodsafety_pg/blob/shakern/src/Home%20Bottom2.png" width=600" height="400">
+</p>
+                                                                                                              
 </p>
 
 **<a name="extras"></a>Extras**
