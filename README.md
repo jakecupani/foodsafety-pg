@@ -20,6 +20,7 @@ In addition, the OS your device is running does not interfere with the ability f
 
 ## For more information...
 ...visit our [user manual](https://github.com/jakecupani/foodsafety_pg/blob/shakern/UMANUAL.md) to get a more in depth look at our application, as well as how to use it and other useful tips. 
+
 ...visit our [developer manual]() to get a more technical look at our application, including how to load our application, run the server, and much more. 
 
 ### Special Shoutouts
