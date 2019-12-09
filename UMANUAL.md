@@ -45,12 +45,12 @@ The Contact Us page allows users to send their thoughts and feedback, as well as
 
 **<a name="home"></a>Home Page**
 <p> You’re hungry and you want to eat… what do you do.
-1.
-The first step in using the FSPG application is applying the filters that relate to your specific search. This can be done by checking the relevant boxes on the left hand side under the Filters section, and clicking “Filter”. 
-2.
-You’ll notice that the map has updates with markers of the locations of food establishments that meet the criteria of the filters that you selected. Click on the marker you want to learn more about and then click “Get Results” to learn more about the food establishment.
-3.
-Underneath, you’ll see that the ‘Name’, ‘Location’, and ‘Inspection Results’ sections of the page have updated with the results related to the food establishment that you have selected.
+
+1. The first step in using the FSPG application is applying the filters that relate to your specific search. This can be done by checking the relevant boxes on the left hand side under the Filters section, and clicking “Filter”. 
+
+2. You’ll notice that the map has updates with markers of the locations of food establishments that meet the criteria of the filters that you selected. Click on the marker you want to learn more about and then click “Get Results” to learn more about the food establishment.
+
+3. Underneath, you’ll see that the ‘Name’, ‘Location’, and ‘Inspection Results’ sections of the page have updated with the results related to the food establishment that you have selected.
 </p>
 
 **<a name="extras"></a>Extras**
