@@ -104,6 +104,14 @@ p {
   margin-top: 80px;
 }
 
+#heart {
+  color: pink;
+}
+
+footer {
+  padding-top: 50px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
