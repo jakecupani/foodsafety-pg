@@ -70,10 +70,65 @@
         <hr>
         <div class="row">
           <div class="col-sm-12">
-            <h2 class="section-head">Get Started!</h2>
-            <p>Get started by filtering the type of category you want to see. The map will then update and you can
-              select
-              the restaurant you want to see health inspection results from. </p>
+            <h2 class="section-head">Getting Started</h2>
+            <br>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Filtering
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    The first step in using the FSPG application is applying the filters that relate to your specific
+                    search. This can be done by checking the relevant boxes on the left hand side under the Filters
+                    section, and clicking “Filter”.
+                  </div>
+                  <img class="getting-started" src="/static/filters.png">
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Establishment Map
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    You’ll notice that the map has updates with markers of the locations of food establishments that
+                    meet the criteria of the filters that you selected. Click on the marker you want to learn more about
+                    and then click “Get Results” to learn more about the food establishment.
+                  </div>
+                  <img class="getting-started" src="/static/map.png">
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Inspection Results
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Underneath, you’ll see that the ‘Name’, ‘Location’, and ‘Inspection Results’ sections of the page
+                    have updated with the results related to the food establishment that you have selected. Green
+                    results are in compliance, while red results are out of compliance.
+                  </div>
+                  <img class="getting-started" src="/static/results.png">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <hr>

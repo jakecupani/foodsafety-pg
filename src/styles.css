@@ -50,6 +50,10 @@ body {
 
 }
 
+.getting-started {
+  margin: 0 auto;
+}
+
 .section-head {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 2.3em;
