@@ -83,6 +83,69 @@ and SEO. Based on our results, we can determine which parts of our application n
 in almost all categories.
 ![Auditing Results](/src/static/AuditingResults.png)
 
+### API for the server application
+Prince George’s County API was used to get the data to the server for this application. The three endpoints that are implemented in this application include GET, POST, and PUT endpoints.
+
+The GET endpoint gets the data from the API to the server which is then displated in the front-end of the application. 
+```javascript
+app.get('/api', (req, res)=>{
+  const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
+  fetch(baseURL)
+    .then((r) => r.json())
+    .then(res => {
+      let mapdata = res.map(function (data) { return data});
+      mapdata.map(el => {
+        if (el.inspection_result === "------"){
+          el.inspection_result = "No inspecction results available.";
+          }
+        });
+        return mapdata;
+      })
+      .then((data) => {
+        res.send({ data: data});
+        })
+        .catch((err) => {
+          console.log(err);
+          res.redirect('/error');
+        });
+    });
+    let message = [];
+    app.get('/message', function (req, res) {
+      res.json(messages);
+    });
+```
+The POST endpoint is implemented to take information from users which they input in the Contact page and store it in the server for future use but as of right now all it does is display the contact page. 
+```javascript
+app.post('/messages', function (req, res){
+  messages.push(request.body)
+  var user_name = req.body.user;
+  console.log("User name = " + user_name + ", message is " + message);
+  res.end("yes");
+});
+```
+The PUT endpoint
+```javascript
+app.put('/messages/:user', function (req, res) {
+  let user = Number (req.body.user);
+  let msg = request.body.message;
+  let temp = messages.find((el) => el.user === user);
+  let index = messages.indexOf(temp);
+  
+  if (!temp){
+    response.status(500).send('Your messgae was not found.');
+  } else {
+    message[index].message = msg;
+    response.send('message updated.')
+  }
+});
+```
+### Bugs and Road-Map to future development
+Some of the bugs you might encounter with this application include loading of the map markers and filters. In the beginning the team had issues with filter. When the user clicked  the filters the map was not populating with markers as expected but it was resolved later. The post request takes you to the contact page where users can input their contact info but the information is not sent anywhere and for future development that can be worked further to get feedback from users to improve the application. For future development we would like to take this application into a bigger scale, not just PG county but hopefully make it to state-level so everyone in Maryland can use this application to make healthy choices when it comes to picking where to eat. We will make changes into the application if we do decide to up the scale of this project by adding different features to the site like adding a search bar so people can easily look up restaurant. We will need more data since we will be covering more areas and solutions to handle massive amounts of data on the server and display it to the front of the application without any delay or lag for smooth user experience. 
+        
+      
+      
+
+
 
 
 
