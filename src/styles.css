@@ -95,6 +95,7 @@ body {
 }
 
 
+
 p {
   font-family: 'Nunito', sans-serif;
 
@@ -102,6 +103,13 @@ p {
 
 .team-name {
   margin-top: 80px;
+}
+
+#tech-stack {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #heart {
