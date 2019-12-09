@@ -1,4 +1,4 @@
-# Food Safety PG
+![Food Safety PG Logo](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/pg-logo.png)
 > An application created to help users make make informed, healthy decisions regarding where to eat in PG County.
 
 *According to the World Health Organization, 600 million people become ill from contaminated food and around 420 thousand people die from contaminated food every year. Given these statistics, food safety and handling of restaurants is arguably one of the most direct ways in keeping the public healthy.*
