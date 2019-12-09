@@ -10,6 +10,7 @@
 * [Bugs and Road-Map to future development](#bugs)
 
 **<a name="intro"></a> Introduction**
+
 This developer manual was created to help you guide through the system design of Food Safety PG Application. This manual
 will go through how to get all the files you will need to run the application and steps on how to run and install any dependencies that were
 used to create this application. This manual will cover how to run the server, more information about the API that was used and all the endpoints.
