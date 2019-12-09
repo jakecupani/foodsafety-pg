@@ -6,7 +6,7 @@
 *However, the issue stems not only in the lack of cleanliness while preparing food, but the lack of knowledge consumers have while picking places to eat. This lack of access to an easily accessible and intuitive way to determine if the places people go to eat are compliant with food inspection standards is what led to the creation of the "Food Safety PG" application. Its goal is to bring to light the true state of cleanliness of the food establishments to help people make informed decisions about where they go to eat.*
 
 ## Our App
-Do you want to know what food establishments are compliant and safe to eat from? Then click [here](http://foodsafetypg.herokuapp.com/index.html)!!
+Want to know what food establishments are compliant and safe to eat from in PG County? Check out our web application [here](http://foodsafetypg.herokuapp.com/index.html)!!
 
 ## Browsers
 Our application was created with all browsers in mind.
@@ -43,9 +43,9 @@ Some of the bugs you might encounter with this application includes loading of t
 We would like to thank the following citations for allowing our application to be as great as it is. Without their assistance, *Food Safety PG* would not have been as up to date as it is! 
 
 
-Card Layout and Animations--> https://www.w3schools.com/howto/howto_css_flip_card.asp
+Card Layout and Animations --> https://www.w3schools.com/howto/howto_css_flip_card.asp
 
-Logo Creation--> https://brandmark.io/
+Logo Creation --> https://brandmark.io/
 
 POST Request Template --> https://codeforgeek.com/handle-get-post-request-express-4/
 
