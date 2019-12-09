@@ -1,20 +1,31 @@
 ## A Developer manual for food safety PG
 ![Food Safety PG Logo](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/pg-logo.png)
-### Introduction 
+
+### Table of contents
+* [Introduction](#intro)
+* [How to install application dependencies](#depend)
+* [How to Run application in the server](#server)
+* [How to run a test for the application](#test)
+* [API for the server application](#API)
+* [Bugs and Road-Map to future development](#bugs)
+
+**<a name="intro"></a> Introduction**
 This developer manual was created to help you guide through the system design of Food Safety PG Application. This manual
 will go through how to get all the files you will need to run the application and steps on how to run and install any dependencies that were
 used to create this application. This manual will cover how to run the server, more information about the API that was used and all the endpoints.
 With the help of this guide, you will be able to run this application in your local machine and continue your journey as a web developer. 
 
-### How to install application dependenices
-Prerequisite: Before you can run the application there are few things you need to have in your machine. 
+
+**<a name = "depend"></a>How to install application dependenices**
+
+Prerequisite: Before you can run the application there are few things you need to have in your machine.
 1.	Make sure you have downloaded node.js in your machine with the appropriate version by using this link to [node.js](https://nodejs.org/en/download/). Node.js is used to run the server for this application. This application’s
 back-end heavily relies on node.js as the server is built using node.js.
 2.	Once you have the node.js app installed on your machine, you can use Powershell (if you are in windows machine) 
 to run node.js simply by opening Powershell and enter ```npm install node.js```and this will install all node.js package 
 into your machine to be used while developing this application. 
 
-The sample-server that is used was created by professor Alex 
+The sample-server that is used was created by professor Alex
 ```javascript
 {
 "name":"sample-server",
@@ -48,7 +59,7 @@ The sample-server that is used was created by professor Alex
 Leaflet is used to provide our application with mapping capabilities which includes using the data from the Prince George’s API
 to plot markers on the map for users to show the location of each restaurant. To install leaflet on your machine open Powershell 
 for windows and terminal for mac and enter ```npm install leaflet``` and this will download all the leaflet packages that you will need to 
-implement the mapping capabilities for this application. 
+implement the mapping capabilities for this application.</p> 
 
 ```C:\Users\User Name> npm install leaflet```
 
@@ -57,7 +68,8 @@ machine to be used later.
 
 ```C:\Users\User Name> npm install bootstrap```
 
-### How to run the application in the server
+**<a name="server"></a> How to run the application in the server**
+
 How to get application files
 1.	All the application files are uploaded to [GitHub](https://github.com/jakecupani/foodsafety_pg) on the master branch. 
 2.	Clone or download the repository to your GitHub desktop to review the files and codes.
@@ -79,13 +91,15 @@ Our app is running on port 3000
 ```
 4.	You can go to the web browser and on the address bar enter “http://localhost:3000/” which will open the application on your web browser. 
 
-### How to run a test for the application 
+**<a name="test"></a> How to run a test for the application** 
+
 To test our application, we will be using Google Chrome's built-in auditing tool. This tool allows us to gauge how well our site is doing in terms of accessibility, performance, best practices, 
 and SEO. Based on our results, we can determine which parts of our application need more work than others. Below we have provided the current output from the auditing tool, which shows our application is doing well 
 in almost all categories.
 ![Auditing Results](/src/static/AuditingResults.png)
 
-### API for the server application
+**<a name="API"></a> API for the server application**
+
 Prince George’s County API was used to get the data to the server for this application. The three endpoints that are implemented in this application include GET, POST, and PUT endpoints.
 
 The GET endpoint gets the data from the API to the server which is then displated in the front-end of the application. 
@@ -141,5 +155,8 @@ app.put('/messages/:user', function (req, res) {
   }
 });
 ```
-### Bugs and Road-Map to future development
+
+**<a name="bugs"></a> Bugs and Road-Map to future development**
+
 Some of the bugs you might encounter with this application include loading of the map markers and filters. In the beginning the team had issues with filter. When the user clicked  the filters the map was not populating with markers as expected but it was resolved later. The post request takes you to the contact page where users can input their contact info but the information is not sent anywhere and for future development that can be worked further to get feedback from users to improve the application. For future development we would like to take this application into a bigger scale, not just PG county but hopefully make it to state-level so everyone in Maryland can use this application to make healthy choices when it comes to picking where to eat. We will make changes into the application if we do decide to up the scale of this project by adding different features to the site like adding a search bar so people can easily look up restaurant. We will need more data since we will be covering more areas and solutions to handle massive amounts of data on the server and display it to the front of the application without any delay or lag for smooth user experience. 
+
