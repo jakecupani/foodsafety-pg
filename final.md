@@ -1,5 +1,5 @@
 # Food Safety In Prince George's County
-## **Team Members:** Jake Cupani, Will Kraft, Aparna Ranganathan, Gyan Kadariya, Nadine Shaker, Matt Ye
+### **Team Members:** Jake Cupani, Will Kraft, Aparna Ranganathan, Gyan Kadariya, Nadine Shaker, Matt Ye
 ## Our Website: [PG County Food Safety](https://foodsafetypg.herokuapp.com/ "PG County Food Safety")
 
 ### Information Problem
@@ -12,7 +12,7 @@ Prince George’s (PG) County has the 3rd highest number of households in Maryla
 3. Finally, a future potential stakeholder is the World Health Organization (WHO).
 
 ### Data
-We chose to work with data provided by the PG Open Data Project.
+We chose to work with data provided by the [PG Open Data Project](https://data.princegeorgescountymd.gov/Health/Food-Inspection/umjn-t2iz "PG County Food Inspection Dataset").
 
 ### Chosen strategies
 We wanted to present the data in the most simple and straightforward manner. In order to do so, we had to pull the complicated data supplied by the API, and format it in a way that was easy to understand. We also wanted to supply location data in the same simplified manner. 
