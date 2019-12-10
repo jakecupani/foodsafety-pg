@@ -7,11 +7,20 @@
 ### Information Problem
 Prince George’s (PG) County has the 3rd highest number of households in Maryland and yet it is 12th in Median Household Income. There are a lot of individuals that lack the information and tools to make informed health decisions. Currently, there is no easy and accessible way to check if restaurants and food establishments are compliant with health and safety inspections. Furthermore, our integration with Google Maps allows for users to get directions, reviews, and much more information once they decide on a food establishment.
 
-### Stakeholders & Target browsers
+### Stakeholders
 + Stakeholders for our project are mainly residents of PG County. 
     - They have an interest in eating and shopping at compliant establishments in order to stay healthy.
 + A secondary stakeholder is the Prince George’s Healthcare Action Coalition.
 + Finally, a future potential stakeholder is the World Health Organization (WHO).
+
+### Target Browsers
+Our application was created with all browsers in mind.
+
+All modern browsers will be able to host our web-based application, including Chrome, Firefox, & Safari.
+
+With the growing use of hand-held mobile devices, we created our application with this in mind, paying special attention to the resolution and interactivity of its display. With that being said, our application seemlessly views on either desktop computers or hand-held devices, in order to make the application easy to use wherever it is being viewed.
+
+In addition, the OS your device is running does not interfere with the ability for the app to preform well because the application has been created with all operating systems in mind.
 
 ### Data
 We chose to work with data provided by the PG Open Data Project, specifically the [Food Inspection API](https://data.princegeorgescountymd.gov/Health/Food-Inspection/umjn-t2iz "PG County Food Inspection Dataset"). The data has various attributes detailing information regarding each establishment, such as location, category, name, and detailed inspection results. The location variable made it easy to port into the Leaflet map on our website since they are already "Point" objects with respective latitude and longitude coordinates. The data was provided by the Department of Permitting, Inspections and Enforcement. The dataset was created on Match 6th, 2019, which makes it a fairly new dataset to be working with. When we made the API request for the data, it returns in JSON which is helpful because it is an easy to manipulate format.
