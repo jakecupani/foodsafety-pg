@@ -1,4 +1,4 @@
-## A Developer manual for food safety PG
+## A Developer manual for Food Safety PG
 ![Food Safety PG Logo](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/pg-logo.png)
 
 ### Table of contents
