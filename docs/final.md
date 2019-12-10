@@ -5,7 +5,7 @@
 ### Our Website: [PG County Food Safety](http://foodsafetypg.herokuapp.com/index.html "PG County Food Safety")
 
 ### Information Problem
-Prince George’s (PG) County has the 3rd highest number of households in Maryland and yet it is 12th in Median Household Income. There are a lot of individuals that lack the information and tools to make informed health decisions. Currently, there is no easy and accessible way to check if restaurants and food establishments are compliant with health and safety inspections. Furthermore, there is no service that also allows users to find directions to aforementioned restaurants and food establishments. 
+Prince George’s (PG) County has the 3rd highest number of households in Maryland and yet it is 12th in Median Household Income. There are a lot of individuals that lack the information and tools to make informed health decisions. Currently, there is no easy and accessible way to check if restaurants and food establishments are compliant with health and safety inspections. Furthermore, our integration with Google Maps allows for users to get directions, reviews, and much more information once they decide on a food establishment.
 
 ### Stakeholders & Target browsers
 + Stakeholders for our project are mainly residents of PG County. 
