@@ -1,4 +1,6 @@
 # Food Safety PG
+![Food Safety PG Logo](https://github.com/jakecupani/foodsafety_pg/blob/master/src/static/pg-logo.png)
+
 ### Group Members: Jake Cupani, Matt Ye, Nadine Shaker, Aparna Ranganathan, Gyan Kadariya, William Kraft
 ### Our Website: [PG County Food Safety](http://foodsafetypg.herokuapp.com/index.html "PG County Food Safety")
 
