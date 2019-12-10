@@ -32,6 +32,7 @@ Node.js is used to created the server and the prince george's county API supplie
 
 ## Running Test for the Application
 To test our application, we will be using Google Chrome's built in auditing tool. This tool allows us to gauge how well our site is doing in terms of accessibility, performance, best practices, and SEO. Based on our results, we can determine which parts of our application need more work than others. Below we have provided the current output from the auditing tool, which shows our application is doing really well in almost all categories. ![Auditing Results](/src/static/AuditingResults.png)
+One thing that was really great about using the Auditing tool was the simulated throttling feature. This allowed us to see how our app would do under low connection circumstances. Thankfully, our app does just fine in these circumstances. We didn't look into much detail on the SEO tips suggested by the tool, but this would definitely be useful should we want to expand this project in the future.
 
 ## API for the server application 
 The Prince George’s County API was used to get the data to the server for this application. The three endpoints that are implemented in this application includes GET,POST, and PUT endpoints. More detail on what each endpoint does is found on the [developer manual](/docs/developer_manual.md)
