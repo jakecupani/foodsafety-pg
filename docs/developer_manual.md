@@ -103,7 +103,7 @@ in almost all categories.
 
 Prince George’s County API was used to get the data to the server for this application. The three endpoints that are implemented in this application include GET, POST, and PUT endpoints.
 
-The GET endpoint gets the data from the API to the server which is then displated in the front-end of the application. 
+The GET endpoint gets the data from the API to the server which is then displayed in the front-end of the application. Before doing this it edits some of the data to be more readable.
 ```javascript
 app.get('/api', (req, res)=>{
   const baseURL = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
@@ -140,7 +140,7 @@ app.post('/messages', function (req, res){
   res.end("yes");
 });
 ```
-The PUT endpoint
+The PUT endpoint is implemented to allow users to edit their messages they sent in the Contact page, but currently there is no real way to do this on the website. It finds the message matching the given username and sets it to the new message.
 ```javascript
 app.put('/messages/:user', function (req, res) {
   let user = Number (req.body.user);
